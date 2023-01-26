@@ -1,0 +1,154 @@
+@import "../../../src//responsive.scss";
+
+.bg_img_about {
+    width: 100%;
+    // height: 1489px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    flex-direction: column;
+    background-color: black;
+    background-image: url("../../../public/assets/about_bg.png");
+    background-position: center;
+    background-size: cover;
+
+    @include respond-to(mobile-small) {
+        padding: 0 8%;        
+    }
+    &_heading {
+        display: contents;
+        a {
+            color: red;
+            display: flex;
+            margin-top: -12%;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            @include respond-to(mobile-small) {
+                display: none;
+            }
+        }
+        h2 {
+            color: white;
+            margin: 4% 0 1%;
+            font-size: 36px;
+            @include respond-to(mobile-small) {
+                font-size: 24px;
+            }
+        }
+        p {
+            color: white;
+            text-align: center;
+            margin-top: 1%;
+            @include respond-to(mobile-small) {
+                font-size: 12px;
+            }
+        }
+        h3 {
+            color: white;
+            margin-top: 11%;
+            font-size: 33px;
+            @include respond-to(mobile-small) {
+                font-size: 26px;
+            }
+        }
+    }
+}
+.main_abt {
+    display: flex;
+    width: 90%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet-s) {
+        width: 96%;
+    }
+    &_detail {
+        color: white;
+        padding-right: 4%;
+        width: 50%;
+        @include respond-to(laptop) {
+            padding-right: 0;
+        }
+        @include respond-to(mobile-small) {
+            padding-right: 4px;
+        }
+        img {
+            width: 216px;
+            height: 216px;
+            @include respond-to(laptop) {
+                width: 142px;
+                height: 133px;
+            }
+            @include respond-to(mobile-small) {
+                width: 130px;
+                height: 122px;
+            }
+            @include respond-to(mobile-s) {
+                width: 100%;
+                height: 100px;
+            }
+        }
+        &:last-child {
+            padding-right: 0 !important;
+            padding-left: 3%;
+        }
+    }
+    &_info {
+        display: flex;
+        margin-top: 11%;
+        @include respond-to(mobile-small) {
+            flex-direction: column;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3%;
+            justify-content: flex-end;
+            @include respond-to(mobile-small) {
+                margin: 7% 0% 0 0;
+            }
+            // @include respond-to(tablet-mini-off) {
+            //     margin: 25% 0% 0 2%;
+            // }
+        }
+        h1 {
+            font-size: 36px;
+            @include respond-to(mobile-small) {
+                font-size: 20px!important;
+            }
+            @include respond-to(tablet-mini) {
+                font-size: 23px;
+            }            
+        }
+        h4 {
+            @include respond-to(mobile-small) {
+                font-size: 13px;
+            }
+            @include respond-to(tablet-s) {
+                font-size: 13px;
+            }
+        }
+    }
+    p {
+        text-align: initial;
+        margin-top: 2%;
+        font-size: 15px;
+        @include respond-to(mobile-small) {
+            font-size: 13px;
+        }
+    }
+}
+.map {
+    width: 583px;
+    margin-top: 2%;
+    @include respond-to(mobile-small) {
+        width: 325px;
+        margin-top: 8%;
+    }
+    @include respond-to(mobile-s) {
+        width: 280px;
+        margin-top: 8%;
+    }
+}

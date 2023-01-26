@@ -1,0 +1,214 @@
+@import "../../../src//responsive.scss";
+
+.bg_img_news {
+    width: 100%;
+    // height: 755px;
+    object-fit: cover;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+    flex-direction: column;
+    background-image: url("../../../public/assets/NEWS.png");
+    background-position: center;
+    background-size: cover;
+    
+    @include respond-to(tablet-miniX) {
+        padding: 0 4%;
+    }
+
+    &_heading {
+        display: contents;
+        a {
+            color: red;
+            display: flex;
+            margin-top: 2%;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            @include respond-to(mobile-small) {
+                display: none;
+            }
+            @include respond-to(desktop-s) {
+                font-size: 27px;
+            }
+        }
+        h1 {
+            color: white;
+            margin-top: 2%;
+            @include respond-to(desktop-s) {
+                font-size: 60px;
+            }
+        }
+        .news_h {
+            margin: 8% 0 1%;
+            color: white;
+        }
+    }
+}
+.news {
+    &_container {
+        text-align: center;
+        @include respond-to(desktop-s) {
+            padding: 0% 3% 2%;
+        }
+        @include respond-to(mobile-small) {
+            padding: 4% 0 2%;
+        }
+    }
+
+    &_div {
+        background: rgba(0, 0, 0, 0.87);
+        display: flex;
+        border-radius: 21px;
+        margin: 2% 1% 0%;
+        padding: 2% 1.85% 1%;
+        @include respond-to(desktop-s) {
+            padding: 0 25px 50px;
+        }
+        @include respond-to(mobile-small) {
+            background: none;
+            flex-direction: column;
+        }
+        @include respond-to(tablet-miniX) {
+            flex-direction: column;
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+        &-img {
+            img {
+                width: 357px;
+                cursor: pointer;
+                transition: transform 0.5s; /* Animation */
+
+                &:hover {
+                    transform: scale(
+                        0.9
+                    ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
+                @include respond-to(desktop-s) {
+                    width: 374px;
+                    margin-top: 10%;
+                }
+            }
+        }
+        &-img_M {
+            img {
+                width: 93%;
+                cursor: pointer;
+                transition: transform 0.5s; /* Animation */
+
+                &:hover {
+                    transform: scale(
+                        0.9
+                    ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
+            }
+        }
+        .content {
+            text-align: initial;
+            color: #fff;
+            padding-left: 2%;
+            .name {
+                margin-bottom: 2%;
+                font-size: 17px;
+                font-weight: 600;
+                @include respond-to(desktop-s) {
+                    font-size: 28px;
+                    margin-top: 2%;
+                }
+            }
+            .para {
+                font-size: 16px;
+                @include respond-to(desktop-s) {
+                    font-size: 22px;
+                }
+            }
+        }
+        .content_M {
+            text-align: initial;
+            color: #fff;
+            padding-left: 2%;
+            .name {
+                margin-bottom: 2%;
+                font-size: 25px;
+                font-weight: 600;
+                @include respond-to(mobile-small) {
+                    font-size: 16px;
+                    margin-top: 2%;
+                }
+                @include respond-to(mobile-s) {
+                    font-size: 16px;
+                    margin-top: 2%;
+                }
+                @include respond-to(tablet-miniX) {
+                    margin-top: 2%;
+                }
+            }
+            .para {
+                font-size: 21px;
+                @include respond-to(mobile-small) {
+                    font-size: 16px;
+                }
+                @include respond-to(mobile-s) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.see {
+    color: white;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+}
+h1 {
+    color: #fff;
+    margin: 2% 0;
+    @include respond-to(desktop-s) {
+        font-size: 60px;
+    }
+}
+.rel_h {
+    color: white;
+    margin: 5% 0 8%;
+}
+.rel_news {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    @include respond-to(mobile-small) {
+        flex-direction: column;
+    }
+    p {
+        width: 27%;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+        @include respond-to(mobile-small) {
+            width: 100%;
+        }
+        @include respond-to(desktop-s) {
+            font-size: 25px;
+        }
+    }
+    img {
+        margin: 0 3%;
+        height: 73px;
+        width: 3px;
+        @include respond-to(mobile-small) {
+            margin: 4% 3%;
+            height: 2px;
+            width: 20%;
+        }
+    }
+}
+.bott_img {
+    width: 119%;
+    margin-top: auto;
+    @include respond-to(mobile-small) {
+        width: 109%;
+    }
+}

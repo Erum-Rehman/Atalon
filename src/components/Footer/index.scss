@@ -1,0 +1,91 @@
+@import "../../../src//responsive.scss";
+
+.sec_footer {
+    background-color: white;
+    padding: 2% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond-to(mobile-s) {
+        padding: 2%;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 600;
+        @include respond-to(mobile-s) {
+            font-size: 6px!important;
+        }
+        @include respond-to(mobile-small) {
+            font-size: 9px;
+        }
+        @include respond-to(desktop-s) {
+            font-size: 19px;
+        }
+    }
+    &_icons {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        @include respond-to(mobile-small) {
+            align-items:flex-start
+        }
+        @include respond-to(mobile-small-off) {
+            align-items:flex-start
+        }
+        p {
+            padding-bottom: 10%;
+            @include respond-to(mobile-small) {
+                padding-bottom: 7%;
+            }        
+        }
+        img {
+            width: 215px;
+            @include respond-to(mobile-s) {
+                width: 78%!important;
+            }
+            @include respond-to(mobile-small) {
+                width: 130px;
+            }
+            @include respond-to(mobile-small-off) {
+                width: 240px;
+            }
+           
+        }
+    }
+}
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+.prim_footer {
+    padding: 0 50px;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-to(mobile-s) {
+        padding: 0 7px;
+        font-size: 7px;
+    }
+    @include respond-to(mobile-small) {
+        padding: 0 7px;
+        font-size: 7px;
+    }
+    @include respond-to(desktop-s) {
+        font-size: 20px;
+    }
+}
+.footer_policy {
+    display: flex;
+    p {
+        &:first-child {
+            padding-right: 30px;
+            @include respond-to(mobile-small) {
+                padding-right: 5px;
+            }
+        }
+    }
+}
