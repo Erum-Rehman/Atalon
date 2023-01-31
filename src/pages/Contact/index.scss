@@ -43,7 +43,12 @@
         }
         h1 {
             font-size: 45px;
+            @include respond-to(mobile-s) {
+                margin-top: 5%;
+                font-size: 25px!important;
+            }
             @include respond-to(mobile-small) {
+                margin-top: 5%;
                 font-size: 30px;
             }
             @include respond-to(desktop-s) {
@@ -68,8 +73,8 @@
             @include respond-to(tablet-s) {
                 width: 210px;
             }
-            @include respond-to(mobile-xs) {
-                width: 170px;
+            @include respond-to(mobile-s) {
+                width: 180px!important;
             }
             @include respond-to(desktop-s) {
                 width: 321px;

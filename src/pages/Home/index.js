@@ -7,7 +7,6 @@ const Home = () => {
     return (
         <>
             <div className='bg_img'>
-            <div className="overlay"></div>
                     <video autoPlay loop muted playsInline src='assets/Earth.mp4'/>                    
                 <div className="bg_img_heading">
                     <a href="#">https://elements.envato.com/earth-infographic-elements-SB78PYN</a>
@@ -17,8 +16,11 @@ const Home = () => {
                         into create industries and services around the world.
                     </p>
                     <img className='atalon' alt="" src={`/assets/home_logo.png`} />
-                    <img alt="" style={{ width: '101%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
+                    
                 </div>
+                <div className='grp_div'>
+                    <img alt="" style={{ width: '101%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
+                    </div>
             </div>
         </>
     )

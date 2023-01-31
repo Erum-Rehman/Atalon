@@ -95,7 +95,7 @@ $break-desktop-ultra-large: 2240px;
   }
 
   @else if $media ==tablet-off {
-    @media only screen and (width: $break-tablet) {
+    @media only screen and (min-width: $break-tablet) {
       @content;
     }
   }
@@ -105,7 +105,11 @@ $break-desktop-ultra-large: 2240px;
       @content;
     }
   }
-
+  @else if $media ==laptop-small {
+    @media only screen and (max-width: $break-laptop-small) {
+      @content;
+    }
+  }
   @else if $media ==laptop-s {
     @media only screen and (max-width: $break-laptop-s) {
       @content;
