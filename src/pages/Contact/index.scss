@@ -45,7 +45,7 @@
             font-size: 45px;
             @include respond-to(mobile-s) {
                 margin-top: 5%;
-                font-size: 25px!important;
+                font-size: 25px !important;
             }
             @include respond-to(mobile-small) {
                 margin-top: 5%;
@@ -74,7 +74,7 @@
                 width: 210px;
             }
             @include respond-to(mobile-s) {
-                width: 180px!important;
+                width: 180px !important;
             }
             @include respond-to(desktop-s) {
                 width: 321px;
@@ -147,17 +147,20 @@
     }
 
     .btn {
-        text-align: center;
         margin-top: 5%;
+        display: flex;
+        justify-content: center;
 
         button {
             background-color: #bd1b93;
             color: white;
+            height: 40px;
+            width: 50;
             border: #bd1b93;
-            font-weight: 800;
-            font-size: 18px;
+            font-weight: 600;
+            font-size: 17px;
             border-radius: 6px;
-            padding: 2.5% 12%;
+            padding: 7% 80%;
             cursor: pointer;
             transition: transform 0.5s; /* Animation */
 
@@ -171,7 +174,7 @@
                 font-size: 28px;
             }
             @include respond-to(mobile-small) {
-                font-size: 15px;
+                font-size: 13px;
                 padding: 3% 30%;
             }
         }

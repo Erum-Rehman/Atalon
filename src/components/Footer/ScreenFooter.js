@@ -1,17 +1,17 @@
 import { useLocation } from "react-router-dom";
 import InputText from '../TextField';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 const ScreenFooter = () => {
 
-    const location = useLocation();
 
     return (
         <>
             <div className="sec_footer">
                 <div className="footer_logo">
                     <div style={{ paddingRight: '30px' }}>
-                        <img alt="" style={{ width: '160px' }} src={`/assets/logo.png`} />
+                    <Link to="/"><img alt="" style={{ width: '160px' }} src={`/assets/logo.png`} /></Link>
                     </div>
                     <div>
                         <p>Subscribe Atalon Newsletter</p>
@@ -24,9 +24,8 @@ const ScreenFooter = () => {
                 </div>
                 <div className="footer_logo">
                     <div className='footer_logo_icons'>
-                        <p >Find us on?</p>
-                        <img alt="" src={`/assets/socialIcons.png`} /></div>
-                    <div>
+                        <p className="find">Find us on?</p>
+                        <img alt="" style={{cursor: 'pointer'}} src={`/assets/socialIcons.png`} />
                     </div>
                     <div style={{ paddingLeft: '30px' }}>
                         <p>info@atalonventures.com</p>

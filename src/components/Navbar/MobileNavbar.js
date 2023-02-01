@@ -20,7 +20,7 @@ const MobileNavbar = () => {
             </div>
 
             <div className='secNavbar'>
-                <img alt="" className='pnav_m' src={`/assets/mobNav.png`} />
+            <Link to="/"><img alt="" className='pnav_m' src={`/assets/mobNav.png`} /></Link>
 
             <div className='list_m'>
                 <ul className="nav-items_m">

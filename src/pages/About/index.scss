@@ -15,7 +15,7 @@
     background-size: cover;
 
     @include respond-to(mobile-small) {
-        padding: 0 8%;        
+        padding: 0 8%;
     }
     &_heading {
         display: contents;
@@ -77,6 +77,13 @@
         img {
             width: 216px;
             height: 216px;
+            transition: transform 0.5s; /* Animation */
+            cursor: pointer;
+            &:hover {
+                transform: scale(
+                    0.9
+                ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
             @include respond-to(laptop) {
                 width: 142px;
                 height: 133px;
@@ -116,11 +123,11 @@
         h1 {
             font-size: 36px;
             @include respond-to(mobile-small) {
-                font-size: 20px!important;
+                font-size: 20px !important;
             }
             @include respond-to(tablet-mini) {
                 font-size: 23px;
-            }            
+            }
         }
         h4 {
             @include respond-to(mobile-small) {

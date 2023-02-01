@@ -84,12 +84,12 @@
   }
 }
 .nav-items li {
-    padding-left: 5%;
+    padding-left: 4%;
     @include respond-to(laptop-small) {
       padding-left: 2.5%;
     }
     @include respond-to(laptop-off) {
-      padding-left: 7%;
+      padding-left: 6%;
     }
     &:first-child {
       padding-left: 0 !important;

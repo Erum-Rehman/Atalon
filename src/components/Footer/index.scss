@@ -9,9 +9,10 @@
     @include respond-to(mobile-s) {
         padding: 2%;
     }
-    p {
+    p, .find {
         font-size: 15px;
         font-weight: 600;
+
         @include respond-to(mobile-s) {
             font-size: 6px!important;
         }
@@ -21,6 +22,10 @@
         @include respond-to(desktop-s) {
             font-size: 19px;
         }
+    }
+    .find {
+        text-align: end;
+        margin-bottom: 4%;
     }
     &_icons {
         display: flex;
@@ -40,6 +45,7 @@
         }
         img {
             width: 215px;
+            
             @include respond-to(mobile-s) {
                 width: 78%!important;
             }

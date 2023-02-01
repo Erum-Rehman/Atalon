@@ -11,7 +11,7 @@ const MobileFooter = () => {
             <div className="sec_footer">
                 <div className='sec_footer_icons'>
                     <p >Find us on?</p>
-                    <img alt="" src={`/assets/MobIcons.png`} />
+                    <img alt="" style={{cursor: 'pointer'}} src={`/assets/MobIcons.png`} />
                 </div>
                 <div>
                     <p>info@atalonventures.com</p>
