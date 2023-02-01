@@ -24,7 +24,8 @@ const ScreenNavbar = () => {
 
             <div className='list'>
                 <ul className="nav-items">
-                    <li><Link to="/" className={pathname === '/' ? 'active' : ''}>Home Page</Link></li>
+                    <li><Link to="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
+                    <li><Link to="/" className={pathname === '/about' ? 'active' : ''}>About</Link></li>
                     <li><Link to="/company" className={pathname === '/Company' ? 'active' : ''}>Company Information</Link></li>
                     <li><Link to="/business" className={pathname === '/Business' ? 'active' : ''}>Business Overview</Link></li>
                     <li><Link to="/news" className={pathname === '/News' ? 'active' : ''}>News 2022</Link></li>

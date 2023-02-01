@@ -7,11 +7,14 @@
 .bg_img {
     width: 100%;
     height: 110vh;
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-size: cover;
-
+    @include respond-to(tablet-s) {
+        height: 76vh;
+    }
     video {
         width: 100%;
         height: 100%;
@@ -20,6 +23,7 @@
     &_heading {
         position: absolute;
         width: 99%;
+        padding: 0 3%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,17 +69,13 @@
     }
     @include respond-to(mobile-s) {
         width: 135px;
-        margin-top:30%;
+        margin-top:  30% !important;;
     }
     @include respond-to(tablet-s) {
-        margin-top:30%;
+        margin-top:24%;
     }
 }
 .grp_div {
-    position: relative;
-    img {
-        position: absolute;
-    left: 0;
+    position: absolute;
     bottom: 0;
-    }
 }

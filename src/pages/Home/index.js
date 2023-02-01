@@ -18,9 +18,7 @@ const Home = () => {
                     <img className='atalon' alt="" src={`/assets/home_logo.png`} />
                     
                 </div>
-                <div className='grp_div'>
-                    <img alt="" style={{ width: '101%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
-                    </div>
+                    <img alt="" className='grp_div' style={{ width: '101%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
             </div>
         </>
     )
