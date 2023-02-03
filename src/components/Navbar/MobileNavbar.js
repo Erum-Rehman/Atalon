@@ -15,10 +15,6 @@ const MobileNavbar = () => {
 
     return (
         <>
-           <div className='main_nav'>
-                <p>English | 繁體中文</p>
-            </div>
-
             <div className='secNavbar'>
             <Link to="/"><img alt="" className='pnav_m' src={`/assets/mobNav.png`} /></Link>
 
