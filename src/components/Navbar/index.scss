@@ -22,7 +22,8 @@
 }
 .secNavbar {
   width: 100%;
-  background-image: linear-gradient(to top, rgba(12,32,40,0.8),rgba(129, 24, 136, 0.8), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
+  background-image: linear-gradient(to top, rgba(129, 24, 136, 0.1),rgba(129, 24, 136, 0.5), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
+  // background-image: linear-gradient(to top, rgba(129, 24, 136, 0.1),rgba(129, 24, 136, 0.5), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
   position: absolute;
     margin-top: 2.5%;
     z-index: 2;
