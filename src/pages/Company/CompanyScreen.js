@@ -1,5 +1,6 @@
 import './index.scss';
 import { useNavigate } from "react-router-dom";
+import Navbar from '../../components/Navbar';
 
 const CompanyScreen = () => {
     const navigate = useNavigate();
@@ -7,6 +8,7 @@ const CompanyScreen = () => {
     return (
         <>
             <div className='bg_img_mission'>
+                <Navbar/>
                 <div className="bg_img_mission_heading">
                     <h2>Mission</h2>
                     <p>Drive innovation and technology into various creative industries and services and<br />

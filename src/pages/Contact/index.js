@@ -1,9 +1,10 @@
 import './index.scss';
-// import ButnField from '../../components/ButnField';
+import Navbar from '../../components/Navbar';
 
 const Contact = () => {
     return (
         <>
+                <Navbar />
             <div className='bg_img_contact'>
                 <div className="bg_img_contact-Heading">
                     <a href="#">https://elements.envato.com/epic-movie-titles-VUNRC93</a>

@@ -2,23 +2,30 @@
 
 .bg_img_news {
     width: 100%;
-    // height: 755px;
     object-fit: cover;
     display: flex;
-    // justify-content: center;
     align-items: center;
     padding: 0 8%;
     flex-direction: column;
     background-image: url("../../../public/assets/NEWS.png");
     background-position: center;
     background-size: cover;
-    
+
     @include respond-to(tablet-miniX) {
         padding: 0 4%;
     }
 
     &_heading {
-        display: contents;
+        display: flex;
+        padding: 12% 8% 0;
+        flex-direction: column;
+        align-items: center;
+        @include respond-to(mobile-small) {
+            padding: 20% 8% 0 !important;
+        }
+        @include respond-to(tablet-s) {
+            padding: 10% 8% 0;
+        }
         a {
             color: red;
             display: flex;
@@ -37,6 +44,14 @@
             margin-top: 2%;
             @include respond-to(desktop-s) {
                 font-size: 60px;
+            }
+            @include respond-to(mobile-small) {
+                text-align: center;
+                font-size: 22px;
+                margin-top: 10%!important;
+            }
+            @include respond-to(tablet) {
+                margin-top: 4%;
             }
         }
         .news_h {

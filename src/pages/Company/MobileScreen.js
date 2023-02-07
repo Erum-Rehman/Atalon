@@ -1,6 +1,7 @@
 import './index.scss';
 import { useNavigate } from "react-router-dom";
 import mission from '../../mock/mission';
+import Navbar from '../../components/Navbar';
 
 const MobileScreen = () => {
     const navigate = useNavigate();
@@ -8,6 +9,7 @@ const MobileScreen = () => {
     return (
         <>
             <div className='bg_img_mission'>
+                <Navbar />
                 <div className="bg_img_mission_heading">
                     <h2>Mission</h2>
                     <p>Drive innovation and technology into various creative industries and services and<br />

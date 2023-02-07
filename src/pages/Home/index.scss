@@ -13,7 +13,7 @@
     flex-direction: column;
     background-size: cover;
     @include respond-to(tablet-s) {
-        height: 76vh;
+        height: 100vh;
     }
     video {
         width: 100%;
@@ -23,29 +23,29 @@
     &_heading {
         position: absolute;
         width: 99%;
-        padding: 0 8%;
-        // padding: 6% 8% 0;
+        // padding: 0 8%;
+        padding: 6% 8% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: white;
-        // @include respond-to(mobile-small) {
-        //     padding: 12% 8% 0!important;
-        // }
-        // @include respond-to(tablet-s) {
-        //     padding: 10% 8% 0;
-        // }
+        @include respond-to(mobile-small) {
+            padding: 12% 8% 0!important;
+        }
+        @include respond-to(tablet-s) {
+            padding: 10% 8% 0;
+        }
         a {
             color: red;
             display: flex;
-            margin-top: 3%;
+            margin-top: 5%;
             font-family: Arial, Helvetica, sans-serif;
             @include respond-to(tablet) {
                 display: none;
             }
-    // @include respond-to(desktop-s) {
-    //     margin-top: 2%;
-    // }
+    @include respond-to(desktop-s) {
+        margin-top: 2%;
+    }
         }
         h2 {
             color: white;
@@ -53,23 +53,30 @@
             @include respond-to(mobile-small) {
                 text-align: center;
                 font-size: 22px;
-                // margin-top: 8%!important;
+                margin-top: 13%!important;
             }
             @include respond-to(tablet) {
-                margin-top: 4%!important;
+                margin-top: 4%;
+            }
+            @include respond-to(desktop-s) {
+                font-size: 27px;
             }
         }
         p {
             color: white;
-            margin-top: 2%;
             text-align: center;
+            margin-top: 2%;
             @include respond-to(mobile-small) {
                 text-align: center;
                 font-size: 12px;
                 font-weight: 600;
+                margin-top: 5%;
             }
             @include respond-to(mobile-s) {
                 font-size: 9px;
+            }
+            @include respond-to(desktop-s) {
+                font-size: 17px;
             }
         }
     }
@@ -90,10 +97,11 @@
 }
 .atalon {
     position: absolute;
-    top: 40%;
+    top: 43%;
     width: 35%;
     @include respond-to(mobile-small) {
         width: 70%;
+        top: 47%;
     }
     @include respond-to(mobile-s) {
         width: 75%;
@@ -108,4 +116,5 @@
 .grp_div {
     position: absolute;
     bottom: 0;
+//   background-image: linear-gradient(to top, rgba(129, 24, 136, 0.7), rgb(0, 0, 0));
 }

@@ -1,11 +1,13 @@
 import './index.scss';
 import { useNavigate } from "react-router-dom";
+import Navbar from '../../components/Navbar';
 
 const About = () => {
     const navigate = useNavigate();
 
     return (
         <>
+                <Navbar/>
             <div className='bg_img_about'>
                 <div className="bg_img_about_heading">
                     <h2>About Atalon Ventures</h2>

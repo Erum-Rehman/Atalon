@@ -1,6 +1,7 @@
 import './index.scss';
 import { useNavigate } from "react-router-dom";
 import newsMobile from '../../mock/newsMobile';
+import Navbar from '../../components/Navbar';
 
 const News = () => {
     const navigate = useNavigate();
@@ -8,6 +9,7 @@ const News = () => {
     return (
         <>
             <div className='bg_img_news'>
+                <Navbar />
                 <div className="bg_img_news_heading">
                     <a href='#'>https://elements.envato.com/news-24-VREN7DV</a>
                     <h2 className='news_h'>News on 2022</h2>

@@ -22,9 +22,10 @@
 }
 .secNavbar {
   width: 100%;
-  background-image: linear-gradient(to top, rgba(129, 24, 136, 0.4), rgba(129, 24, 136, 1));
-  // position: absolute;
-  //   margin-top: 2.5%;
+  background-image: linear-gradient(to top, rgba(12,32,40,0.8),rgba(129, 24, 136, 0.8), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
+  position: absolute;
+    margin-top: 2.5%;
+    z-index: 2;
     @include respond-to(tablet) {
         margin-top: 0;
     }
@@ -43,8 +44,8 @@
     margin-top: -4%;
     padding: 0 3% 7px 0;
     @include respond-to(mobile-small) {
-      padding: 0 3% 0.5% 0;
-      margin-top: -7% !important;
+      padding: 0 3% 2% 0;
+      margin-top: -8% !important;
     }
     @include respond-to(mobile-s) {
       padding: 0 2% 2% 0 !important;
@@ -55,8 +56,8 @@
 
 .main_nav {
   background-color: black;
-  // position: absolute;
-  //   width: 100%;
+  position: absolute;
+    width: 100%;
   p {
     color: white;
     display: flex;

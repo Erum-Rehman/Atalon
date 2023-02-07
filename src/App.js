@@ -12,7 +12,7 @@ import News from './pages/News';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Routes>
         <Route path="/" element={<Home />}></Route>

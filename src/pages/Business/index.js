@@ -1,6 +1,7 @@
 import './index.scss';
 import { useNavigate } from "react-router-dom";
 import business from '../../mock/business';
+import Navbar from '../../components/Navbar';
 
 const Business = () => {
     const navigate = useNavigate();
@@ -8,6 +9,7 @@ const Business = () => {
     return (
         <>
             <div className='bg_img_business'>
+                <Navbar />
                 <div className="bg_img_business_heading">
                     <a href="#">https://elements.envato.com/science-opener-VK58DPX</a>
                     <h2>Business</h2>

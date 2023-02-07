@@ -28,7 +28,7 @@ const Home = () => {
             <div className='bg_img'>
                 <div id="overlay"> </div>
                     <video autoPlay loop muted playsInline src='assets/Earth.mp4' />
-                    {/* <Navbar/> */}
+                    <Navbar/>
                     <div className="bg_img_heading">
                         <a href="#">https://elements.envato.com/earth-infographic-elements-SB78PYN</a>
                         <h2>Connecting to the innovation and technology era</h2>

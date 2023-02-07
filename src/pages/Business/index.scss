@@ -15,7 +15,16 @@
         padding: 0 3%;
     }
     &_heading {
-        display: contents;
+        display: flex;
+        padding: 10% 8% 0;
+        flex-direction: column;
+        align-items: center;
+        @include respond-to(mobile-small) {
+            padding: 20% 8% 0 !important;
+        }
+        @include respond-to(tablet-s) {
+            padding: 10% 8% 0;
+        }
         a {
             color: red;
             display: flex;
