@@ -2,6 +2,7 @@ import './index.scss';
 import { useNavigate } from "react-router-dom";
 import mission from '../../mock/mission';
 import Navbar from '../../components/Navbar';
+import BgFooter from '../../components/BgFooter';
 
 const MobileScreen = () => {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ const MobileScreen = () => {
                             </div>)
                         )}
                 </div>
-                <img alt="" style={{ width: '119%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
+                <BgFooter/>
             </div>
         </>
     )

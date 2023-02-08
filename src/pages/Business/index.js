@@ -2,6 +2,7 @@ import './index.scss';
 import { useNavigate } from "react-router-dom";
 import business from '../../mock/business';
 import Navbar from '../../components/Navbar';
+import BgFooter from '../../components/BgFooter';
 
 const Business = () => {
     const navigate = useNavigate();
@@ -41,8 +42,8 @@ const Business = () => {
                             </div>)
                         )}
                 </div>
-                <img alt="" style={{ width: '111.15%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
             </div>
+           <BgFooter/>
         </>
     )
 }

@@ -1,0 +1,113 @@
+@import "../../../src//responsive.scss";
+
+.grp_div {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(129, 24, 136, 1), rgba(129, 24, 136, 0.1), rgba(129, 24, 136, 0));
+    .sport {
+        height: 150px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(
+                0.9
+            ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        @include respond-to(laptop-off) {
+            height: 160px;
+            width: 260px;
+        }
+    }
+    .Nft {
+        height: 140px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(
+                0.9
+            ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        @include respond-to(laptop-off) {
+            height: 150px;
+        }
+    }
+    div {
+        display: flex;
+        padding: 0 2% 2%;
+        flex-direction: column;
+        align-items: center;
+        @include respond-to(laptop-off) {
+            padding: 0 2.5% 2%;
+        }
+        h3 {
+            margin-top: 5%;
+            @include respond-to(desktop-largeX-off) {
+                font-size: 23px;
+            }
+        }
+        p {
+            font-size: 15px;
+            cursor: pointer;
+            @include respond-to(desktop-s) {
+                font-size: 17px;
+            }
+            
+            @include respond-to(desktop-largeX-off) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.mob_grp_div {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(129, 24, 136, 1), rgba(0, 0, 0, 3.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    .sport {
+        height: 70px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(
+                0.9
+            ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    }
+    .Nft {
+        height: 60px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(
+                0.9
+            ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+       
+    }
+    div {
+        display: flex;
+        width: 24%;
+        padding: 0 2% 12%;
+        flex-direction: column;
+        align-items: center;
+        
+        h3 {
+            margin-top: 5%;
+            color: #FF4D00;
+            font-size: 11px;
+            text-align: center;
+            
+        }
+        p {
+            font-size: 8px;
+            cursor: pointer;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

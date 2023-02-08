@@ -1,5 +1,6 @@
 import './index.scss';
 import Navbar from '../../components/Navbar';
+import BgFooter from '../../components/BgFooter';
 
 const Contact = () => {
     return (
@@ -24,8 +25,9 @@ const Contact = () => {
                         <button type="submit">Send</button>
                     </div>
                 </div >
-                <img alt="" style={{ width: '118.95%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
             </div >
+            
+           <BgFooter/>
         </>
     )
 }

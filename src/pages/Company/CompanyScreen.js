@@ -1,6 +1,7 @@
 import './index.scss';
 import { useNavigate } from "react-router-dom";
 import Navbar from '../../components/Navbar';
+import BgFooter from '../../components/BgFooter';
 
 const CompanyScreen = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const CompanyScreen = () => {
                     <p>Drive innovation and technology into various creative industries and services and<br />
                         create sustainable development environment with different stakeholders.</p>
                 </div>
-                <img alt="" style={{ width: '119%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
+                <BgFooter/>
             </div>
         </>
     )

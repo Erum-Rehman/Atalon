@@ -2,6 +2,7 @@ import './index.scss';
 import { useNavigate } from "react-router-dom";
 import newsMobile from '../../mock/newsMobile';
 import Navbar from '../../components/Navbar';
+import BgFooter from '../../components/BgFooter';
 
 const News = () => {
     const navigate = useNavigate();
@@ -48,7 +49,7 @@ const News = () => {
                     <img alt="" src={`/assets/MobLine.png`} />
                     <p>July's best 7 beer tastings, parties one should really go to</p>
                 </div>
-                <img className='bott_img' alt="" src={`/assets/Group 7654.png`} />
+                <BgFooter/>
             </div>
         </>
     )

@@ -1,21 +1,20 @@
 import './index.scss';
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar';
+import BgFooter from '../../components/BgFooter';
 
 const About = () => {
-    const navigate = useNavigate();
-
     return (
         <>
                 <Navbar/>
             <div className='bg_img_about'>
                 <div className="bg_img_about_heading">
                     <h2>About Atalon Ventures</h2>
-                    <p>Founded in 2016. Atalon Venture strives to promote business development with innovation and technology and enterprise services. We have developed a series of patent<br />
+                    <p className='abt_para'>Founded in 2016. Atalon Venture strives to promote business development with innovation and technology and enterprise services. We have developed a series of patent<br />
                         products worldwide. In 2020, we have successfully expanded our business to 42 cities in 17 countries over the world. With the objective to connect innovation and<br />
                         technology to everyone’s daily lives, we developed functional, easy-to use creative systems and entertaining game consoles.</p>
                         <br/>
-                    <p>We aim to create an environment that is conducive to innovation and create advanced and superior innovation and technology products. Meanwhile, we have established a<br />
+                    <p className='abt_para'>We aim to create an environment that is conducive to innovation and create advanced and superior innovation and technology products. Meanwhile, we have established a<br />
                         global business network to promote the development of e-commerce and the links between various industries and promote more products to the international market. At<br />
                         the same time, we also actively meet the needs of the innovation and technology industry, continuously upgrade and improve product quality, and strive to be among the<br />
                         world's top innovation and technology provider, so that the development of innovation and technology has gradually become an important pillar of a diversified economy.</p>
@@ -24,7 +23,7 @@ const About = () => {
                     <a href="#">https://elements.envato.com/matrix-technology-data-slideshow-VG6WXR9</a>
 
                     <h3>Management Team</h3>
-                    <p>We continue to build and develop innovation and technology professionals and are committed to seizing opportunities and staying<br />
+                    <p className="manage">We continue to build and develop innovation and technology professionals and are committed to seizing opportunities and staying<br />
                         ahead of others in the development of innovation and technology.</p>
 
                     <div className='main_abt'>
@@ -53,8 +52,8 @@ const About = () => {
                         
                     </div>
                 </div>
-
-                <img alt="" style={{ width: '111.15%', marginTop: 'auto' }} src={`/assets/Group 7654.png`} />
+           <BgFooter/>
+                
             </div>
         </>
     )
