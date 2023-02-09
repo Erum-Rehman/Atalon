@@ -8,7 +8,8 @@
     object-fit: cover;
     display: flex;
     padding: 0 8%;
-    justify-content: center;
+    height: 160vh;
+    position: relative;
     align-items: center;
     flex-direction: column;
     background-image: url("../../../public/assets/about_bg.png");
@@ -17,6 +18,16 @@
 
     @include respond-to(desktop-s) {
         // height: 1000px;
+    }
+    @include respond-to(mobile-small) {
+        height: 95vh;
+    }
+    @include respond-to(mobile-s) {
+        height: 112vh!important;
+    }
+    
+    @include respond-to(laptop-off) {
+        height: 130vh;
     }
     &-Heading {
         color: #ffff;

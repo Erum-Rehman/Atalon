@@ -25,7 +25,13 @@ const ScreenFooter = () => {
                 <div className="footer_logo">
                     <div className='footer_logo_icons'>
                         <p className="find">Find us on?</p>
-                        <img alt="" style={{cursor: 'pointer'}} src={`/assets/socialIcons.png`} />
+                        <div className="socialIcons">
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/twitter.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/yt.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/game.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/chat.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/fb.png`} />
+                        </div>
                     </div>
                     <div style={{ paddingLeft: '30px' }}>
                         <p>info@atalonventures.com</p>

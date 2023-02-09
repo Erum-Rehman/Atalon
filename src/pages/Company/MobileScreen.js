@@ -13,8 +13,8 @@ const MobileScreen = () => {
                 <Navbar />
                 <div className="bg_img_mission_heading">
                     <h2>Mission</h2>
-                    <p>Drive innovation and technology into various creative industries and services and<br />
-                        create sustainable development environment with different stakeholders.</p>
+                    <p>Drive innovation and technology into various creative industries</p><p> and services and
+                        create sustainable development environment</p><p> with different stakeholders.</p>
                 </div>
                 <div className="mission_container">
                     {

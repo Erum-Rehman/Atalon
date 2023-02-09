@@ -5,8 +5,9 @@ import BgFooter from '../../components/BgFooter';
 const Contact = () => {
     return (
         <>
-                <Navbar />
             <div className='bg_img_contact'>
+            <Navbar />
+
                 <div className="bg_img_contact-Heading">
                     <a href="#">https://elements.envato.com/epic-movie-titles-VUNRC93</a>
                     <h1>Contact Us</h1>
@@ -25,9 +26,9 @@ const Contact = () => {
                         <button type="submit">Send</button>
                     </div>
                 </div >
+                <BgFooter />
             </div >
-            
-           <BgFooter/>
+
         </>
     )
 }

@@ -6,8 +6,9 @@ import BgFooter from '../../components/BgFooter';
 const About = () => {
     return (
         <>
-                <Navbar/>
             <div className='bg_img_about'>
+            <Navbar/>
+
                 <div className="bg_img_about_heading">
                     <h2>About Atalon Ventures</h2>
                     <p className='abt_para'>Founded in 2016. Atalon Venture strives to promote business development with innovation and technology and enterprise services. We have developed a series of patent<br />

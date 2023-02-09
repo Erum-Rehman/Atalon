@@ -42,8 +42,8 @@ const Business = () => {
                             </div>)
                         )}
                 </div>
-            </div>
            <BgFooter/>
+            </div>
         </>
     )
 }

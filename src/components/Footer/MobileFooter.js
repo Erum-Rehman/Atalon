@@ -11,7 +11,13 @@ const MobileFooter = () => {
             <div className="sec_footer">
                 <div className='sec_footer_icons'>
                     <p >Find us on?</p>
-                    <img alt="" style={{cursor: 'pointer'}} src={`/assets/MobIcons.png`} />
+                    <div className="socialIcons">
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/twitter.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/yt.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/game.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/chat.png`} />
+                            <img alt="" style={{cursor: 'pointer'}} src={`/assets/fb.png`} />
+                        </div>
                 </div>
                 <div>
                     <p>info@atalonventures.com</p>

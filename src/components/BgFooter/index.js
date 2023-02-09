@@ -24,7 +24,7 @@ const BgFooter = () => {
 
     return (
         <>
-            {width <=975 ? <MobileGrp /> : <ScreenGrp />}
+            {width <=766 ? <MobileGrp /> : <ScreenGrp />}
         </>
     )
 }

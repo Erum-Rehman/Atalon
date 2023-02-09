@@ -8,19 +8,23 @@
     object-fit: cover;
     display: flex;
     align-items: center;
+    position: relative;
     padding: 0 8%;
     flex-direction: column;
     background-image: url("../../../public/assets/bigdata_blue.png");
     background-position: center;
     background-size: cover;
-
+    height: 100vh;
+    @include respond-to(mobile-small) {
+        height: 78vh;
+    }
     &_heading {
         display: flex;
         padding: 8% 8% 0;
         flex-direction: column;
         align-items: center;
         @include respond-to(mobile-small) {
-            padding: 20% 8% 0 !important;
+            padding: 20% 0% 0 !important;
         }
         @include respond-to(tablet-s) {
             padding: 10% 8% 0;
@@ -35,7 +39,7 @@
             text-align: center;
             @include respond-to(mobile-small) {
                 text-align: center;
-                font-size: 13px;
+                font-size: 11px;
             }
         }
     }
@@ -61,7 +65,7 @@
                 font-weight: 500;
             }
             .para {
-                font-size: 13px;
+                font-size: 11px;
             }
         }
     }

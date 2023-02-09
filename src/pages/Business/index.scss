@@ -5,7 +5,9 @@
     object-fit: cover;
     display: flex;
     align-items: center;
+    position: relative;
     padding: 0 5%;
+    height: 233vh;
     flex-direction: column;
     background-color: black;
     background-image: url("../../../public/assets/about_bg.png");
@@ -13,6 +15,15 @@
     background-size: cover;
     @include respond-to(desktop-s) {
         padding: 0 3%;
+    }
+    @include respond-to(mobile-small) {
+        height: 375vh;
+    }
+    @include respond-to(laptop-off) {
+        height: 150vh;
+    }
+    @include respond-to(desktop-s) {
+        height: 200vh;
     }
     &_heading {
         display: flex;
@@ -47,13 +58,13 @@
         p {
             color: white;
             text-align: center;
-            font-size: 15px;
+            font-size: 13px;
             margin-top: 1%;
             @include respond-to(mobile-small) {
                 font-size: 12px;
             }
             @include respond-to(desktop-s) {
-                font-size: 21px;
+                font-size: 20px;
             }
         }
         h3 {
@@ -93,14 +104,14 @@
             padding: 0 25px 50px;
         }
         @include respond-to(mobile-small) {
-            padding: 0 12px 45px;
-            margin: 11% 1% 18%;
-            width: 93%;
+            padding: 0 6% 8%!important;
+            margin: 11% 1% 18%!important;
+            width: 90%!important;
         }
         @include respond-to(tablet) {
-            padding: 0 12px 45px;
+            padding: 0 6% 8%;
             margin: 8% 1% 10%;
-            width: 93%;
+            width: 90%;
         }
         .content {
             text-align: initial;
@@ -154,15 +165,14 @@
             width: 374px;
         }
         @include respond-to(mobile-small) {
-            width: 200px;
-            height: 130px;
+            width: 230px;
         }
     }
 }
 .img_div {
     margin-top: -30%;
     @include respond-to(mobile-small) {
-        margin-top: -16%!important;
+        margin-top: -29%!important;
     }
     @include respond-to(tablet) {
         margin-top: -15%;

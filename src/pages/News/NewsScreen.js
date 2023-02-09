@@ -44,8 +44,8 @@ const News = () => {
                     <img alt="" src={`/assets/line.png`} />
                     <p>July's best 7 beer tastings, parties one should really go to</p>
                 </div>
-            </div>
             <BgFooter/>
+            </div>
 
         </>
     )
