@@ -132,6 +132,10 @@
   @include respond-to(laptop-off) {
     padding-left: 6%;
   }
+  .active {
+    font-weight: 600;
+    text-decoration: underline;
+  }
   &:first-child {
     padding-left: 0 !important;
   }
@@ -149,9 +153,11 @@
   @include respond-to(mobile-small) {
     padding-left: 7%;
   }
-  // @include respond-to(tablet-s) {
-  //   padding-left: 8%;
-  // }
+  &:hover {
+    transform: scale(
+        0.9
+    ); /* (90% zoom out - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 }
 .nav-items li a,
 .nav-items_m li a {
