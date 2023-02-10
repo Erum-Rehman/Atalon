@@ -1,8 +1,8 @@
 import './index.scss';
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import Navbar from '../../components/Navbar';
-import BgFooter from '../../components/BgFooter';
+import HomeNavbar from '../../components/HomeNavbar';
+import BgHomeFooter from '../../components/BgHomeFooter';
 
 const Home = () => {
 
@@ -11,7 +11,7 @@ const Home = () => {
             <div className='bg_img'>
                 <div id="overlay"> </div>
                 <video autoPlay loop muted playsInline src='assets/Earth.mp4' />
-                <Navbar />
+                <HomeNavbar />
                 <div className="bg_img_heading">
                     <a href="#">https://elements.envato.com/earth-infographic-elements-SB78PYN</a>
                     <h2>Connecting to the innovation and technology era</h2>
@@ -22,7 +22,7 @@ const Home = () => {
 
                 </div>
                 <img className='atalon' alt="" src={`/assets/home_logo.png`} />
-                <BgFooter />
+                <BgHomeFooter />
             </div>
         </>
     )

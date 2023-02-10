@@ -7,26 +7,18 @@
     width: 100%;
     object-fit: cover;
     display: flex;
-    padding: 0 8%;
-    height: 160vh;
     position: relative;
     align-items: center;
     flex-direction: column;
     background-image: url("../../../public/assets/about_bg.png");
     background-position: center;
     background-size: cover;
-
-    @include respond-to(desktop-s) {
-        // height: 1000px;
-    }
-    @include respond-to(mobile-small) {
-        height: 95vh;
-    }
-    @include respond-to(mobile-s) {
-        height: 112vh!important;
-    }
     
-    @include respond-to(laptop-off) {
+    @include respond-to(tablet-mini-M-off) {
+        height: 160vh;
+        padding: 0 8%;
+    }
+    @include respond-to(desktop-s) {
         height: 130vh;
     }
     &-Heading {
@@ -38,12 +30,8 @@
         font-family: zurichbold;
         text-align: center;
         font-size: 30px;
-        padding: 8% 8% 0;
-        @include respond-to(mobile-small) {
-            padding: 20% 8% 0 !important;
-        }
-        @include respond-to(tablet-s) {
-            padding: 10% 8% 0;
+        @include respond-to(tablet-mini-off) {
+            padding: 8% 8% 0;
         }
         a {
             color: red;
@@ -192,7 +180,7 @@
             }
             @include respond-to(mobile-small) {
                 font-size: 13px;
-                padding: 3% 30%;
+                padding: 3% 50%;
             }
         }
     }

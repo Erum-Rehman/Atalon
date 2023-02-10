@@ -84,6 +84,11 @@ $break-desktop-ultra-large: 2240px;
       @content;
     }
   }
+  @else if $media ==tablet-mini-M-off {
+    @media only screen and (min-width: $break-tablet-miniM) {
+      @content;
+    }
+  }
   @else if $media ==tablet-mini-XS {
     @media only screen and (min-width: $break-tablet-miniXS) {
       @content;

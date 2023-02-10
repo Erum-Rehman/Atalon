@@ -6,8 +6,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 5%;
-    height: 233vh;
+    // padding: 0 5%;
+    height: 245vh;
     flex-direction: column;
     background-color: black;
     background-image: url("../../../public/assets/about_bg.png");
@@ -16,26 +16,29 @@
     @include respond-to(desktop-s) {
         padding: 0 3%;
     }
-    @include respond-to(mobile-small) {
-        height: 375vh;
-    }
+    // @include respond-to(tablet-off) {
+    //     height: 300vh;
+    // }
     @include respond-to(laptop-off) {
         height: 150vh;
     }
     @include respond-to(desktop-s) {
         height: 200vh;
     }
+    @include respond-to(tablet-s) {
+        height:100%;
+    }
     &_heading {
         display: flex;
         padding: 10% 8% 0;
         flex-direction: column;
         align-items: center;
-        @include respond-to(mobile-small) {
-            padding: 20% 8% 0 !important;
-        }
         @include respond-to(tablet-s) {
-            padding: 10% 8% 0;
+            padding: 3% 8% 0 !important;
         }
+        // @include respond-to(tablet-s) {
+        //     padding: 10% 8% 0;
+        // }
         a {
             color: red;
             display: flex;
@@ -80,7 +83,7 @@
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-
+        margin: 0 4%;
         @include respond-to(desktop-s) {
             padding: 2% 0%;
         }
@@ -108,7 +111,7 @@
             margin: 11% 1% 18%!important;
             width: 90%!important;
         }
-        @include respond-to(tablet) {
+        @include respond-to(tablet-s) {
             padding: 0 6% 8%;
             margin: 8% 1% 10%;
             width: 90%;
@@ -165,16 +168,17 @@
             width: 374px;
         }
         @include respond-to(mobile-small) {
-            width: 230px;
+            width: 200px;
+            height: 130px;
         }
     }
 }
 .img_div {
     margin-top: -30%;
     @include respond-to(mobile-small) {
-        margin-top: -29%!important;
+        margin-top: -23%!important;
     }
-    @include respond-to(tablet) {
+    @include respond-to(tablet-s) {
         margin-top: -15%;
     }
     @include respond-to(desktop-s) {

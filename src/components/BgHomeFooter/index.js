@@ -3,7 +3,7 @@ import MobileGrp from './MobileGrp';
 import ScreenGrp from './ScreenGrp';
 import { useLocation } from "react-router-dom";
 
-const BgFooter = () => {
+const BgHomeFooter = () => {
 
     const location = useLocation();
     const [width, setWidth] = useState(window.screen.width);
@@ -28,4 +28,4 @@ const BgFooter = () => {
         </>
     )
 }
-export default BgFooter;
+export default BgHomeFooter;

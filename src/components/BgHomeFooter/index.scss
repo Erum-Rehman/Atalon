@@ -3,15 +3,12 @@
 .grp_div {
     display: flex;
     width: 100%;
-    position: sticky;
+    position: absolute;
     bottom: 0;
     color: white;
     justify-content: center;
     align-items: baseline;
     background-image: linear-gradient(to top, rgba(129, 24, 136, 1), rgba(129, 24, 136, 0.1), rgba(129, 24, 136, 0));
-    @include respond-to(tablet-off) {
-        position: absolute;
-    }
     .sport {
         height: 150px;
         cursor: pointer;
@@ -76,10 +73,10 @@
         }
     }
 }
-.mob_grp_div {
+.home_grp_div {
     display: flex;
     width: 100%;
-    position: sticky;
+    position: absolute;
     bottom: 0;
     color: white;
     justify-content: center;

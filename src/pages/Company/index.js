@@ -24,7 +24,7 @@ const Company = () => {
 
     return (
         <>
-            {width <=1024 ? <MobileScreen /> : <CompanyScreen />}
+            {width <=975 ? <MobileScreen /> : <CompanyScreen />}
         </>
     )
 }

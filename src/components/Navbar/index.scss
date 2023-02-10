@@ -24,9 +24,30 @@
   width: 100%;
   background-image: linear-gradient(to top, rgba(129, 24, 136, 0.1),rgba(129, 24, 136, 0.5), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
   // background-image: linear-gradient(to top, rgba(129, 24, 136, 0.1),rgba(129, 24, 136, 0.5), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
-  position: absolute;
-    margin-top: 2.5%;
+  position: sticky;
+  top: 0;
+    // margin-top: 2.5%;
     z-index: 2;
+    @include respond-to(tablet-off) {
+      position: absolute;
+      margin-top: 2.5%;
+  }
+    @include respond-to(tablet) {
+        margin-top: 0;
+    }
+    @include respond-to(desktop-largeX-off) {
+      margin-top: 2%;
+    }
+}
+.secHomeNavbar {
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(129, 24, 136, 0.1),rgba(129, 24, 136, 0.5), rgba(129, 24, 136, 1), rgba(129, 24, 136, 1));
+  position: absolute;
+  top: 0;
+    z-index: 2;
+    @include respond-to(tablet-off) {
+      margin-top: 2.5%;
+  }
     @include respond-to(tablet) {
         margin-top: 0;
     }
@@ -60,8 +81,12 @@
 
 .main_nav {
   background-color: black;
-  position: absolute;
+  position: sticky;
+  top: 0;
     width: 100%;
+    @include respond-to(tablet-off) {
+      position: absolute;
+  }
   p {
     color: white;
     display: flex;
